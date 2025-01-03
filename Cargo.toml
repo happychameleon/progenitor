@@ -60,7 +60,9 @@ thiserror = "2.0.9"
 tokio = { version = "1.42.0", features = ["rt", "net"] }
 # change when publishing
 # typify = { version = "0.3.0" }
-typify = { git = "https://github.com/oxidecomputer/typify" }
+# typify = { git = "https://github.com/oxidecomputer/typify" }
+[patch."https://github.com/oxidecomputer/typify"]
+typify = { git = "https://github.com/coolavery/typify.git", branch = "0.1.0-unreachable" }
 url = "2.5.4"
 unicode-ident = "1.0.14"
 uuid = { version = "1.11.0", features = ["serde", "v4"] }
